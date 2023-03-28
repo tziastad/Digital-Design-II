@@ -1,0 +1,40 @@
+|CrtlLogic-schematic
+SL_A <= CrtlLogic:inst.SL_A
+Rst => CrtlLogic:inst.Rst
+CLK => CrtlLogic:inst.CLK
+SL_B <= CrtlLogic:inst.SL_B
+SL_H <= CrtlLogic:inst.SL_H
+SL_L <= CrtlLogic:inst.SL_L
+SL_C <= CrtlLogic:inst.SL_C
+EN_A <= CrtlLogic:inst.EN_A
+EN_B <= CrtlLogic:inst.EN_B
+EN_H <= CrtlLogic:inst.EN_H
+EN_L <= CrtlLogic:inst.EN_L
+EN_C <= CrtlLogic:inst.EN_C
+
+
+|CrtlLogic-schematic|CrtlLogic:inst
+Rst => count[0].ACLR
+Rst => count[1].ACLR
+Rst => count[2].ACLR
+Rst => count[3].ACLR
+Rst => state~6.DATAIN
+Rst => m_state.ENA
+CLK => m_state.CLK
+CLK => count[0].CLK
+CLK => count[1].CLK
+CLK => count[2].CLK
+CLK => count[3].CLK
+CLK => state~4.DATAIN
+SL_A <= SL_A.DB_MAX_OUTPUT_PORT_TYPE
+SL_B <= SL_B.DB_MAX_OUTPUT_PORT_TYPE
+SL_H <= m_state.DB_MAX_OUTPUT_PORT_TYPE
+SL_L <= SL_L.DB_MAX_OUTPUT_PORT_TYPE
+SL_C <= <GND>
+EN_A <= EN_A.DB_MAX_OUTPUT_PORT_TYPE
+EN_B <= EN_B.DB_MAX_OUTPUT_PORT_TYPE
+EN_H <= EN_H.DB_MAX_OUTPUT_PORT_TYPE
+EN_L <= EN_L.DB_MAX_OUTPUT_PORT_TYPE
+EN_C <= EN_C.DB_MAX_OUTPUT_PORT_TYPE
+
+

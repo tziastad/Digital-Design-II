@@ -1,0 +1,87 @@
+|Enable2
+Y[0] <= choice2:inst.Y
+Y[1] <= choice2:inst1.Y
+Y[2] <= choice2:inst2.Y
+Y[3] <= choice2:inst3.Y
+L[0] => choice2:inst.L
+L[1] => choice2:inst1.L
+L[2] => choice2:inst2.L
+L[3] => choice2:inst3.L
+I[0] => choice2:inst.I
+I[1] => choice2:inst1.I
+I[2] => choice2:inst2.I
+I[3] => choice2:inst3.I
+R1[0] => choice2:inst.R1
+R1[1] => choice2:inst1.R1
+R1[2] => choice2:inst2.R1
+R1[3] => choice2:inst3.R1
+R2[0] => choice2:inst.R2
+R2[1] => choice2:inst1.R2
+R2[2] => choice2:inst2.R2
+R2[3] => choice2:inst3.R2
+A0 => choice2:inst.A0
+A0 => choice2:inst1.A0
+A0 => choice2:inst2.A0
+A0 => choice2:inst3.A0
+AI => choice2:inst.A1
+AI => choice2:inst1.A1
+AI => choice2:inst2.A1
+AI => choice2:inst3.A1
+
+
+|Enable2|choice2:inst
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|Enable2|choice2:inst1
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|Enable2|choice2:inst2
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|Enable2|choice2:inst3
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+

@@ -1,0 +1,170 @@
+|lab4-FA_8bit
+Cout <= FA_8bit:inst.Cout
+Cin => FA_8bit:inst.Cin
+A[0] => FA_8bit:inst.A[0]
+A[1] => FA_8bit:inst.A[1]
+A[2] => FA_8bit:inst.A[2]
+A[3] => FA_8bit:inst.A[3]
+A[4] => FA_8bit:inst.A[4]
+A[5] => FA_8bit:inst.A[5]
+A[6] => FA_8bit:inst.A[6]
+A[7] => FA_8bit:inst.A[7]
+B[0] => FA_8bit:inst.B[0]
+B[1] => FA_8bit:inst.B[1]
+B[2] => FA_8bit:inst.B[2]
+B[3] => FA_8bit:inst.B[3]
+B[4] => FA_8bit:inst.B[4]
+B[5] => FA_8bit:inst.B[5]
+B[6] => FA_8bit:inst.B[6]
+B[7] => FA_8bit:inst.B[7]
+S[0] <= FA_8bit:inst.S[0]
+S[1] <= FA_8bit:inst.S[1]
+S[2] <= FA_8bit:inst.S[2]
+S[3] <= FA_8bit:inst.S[3]
+S[4] <= FA_8bit:inst.S[4]
+S[5] <= FA_8bit:inst.S[5]
+S[6] <= FA_8bit:inst.S[6]
+S[7] <= FA_8bit:inst.S[7]
+
+
+|lab4-FA_8bit|FA_8bit:inst
+A[0] => FA:FA0.A
+A[1] => FA:FA1.A
+A[2] => FA:FA2.A
+A[3] => FA:FA3.A
+A[4] => FA:FA4.A
+A[5] => FA:FA5.A
+A[6] => FA:FA6.A
+A[7] => FA:FA7.A
+B[0] => FA:FA0.B
+B[1] => FA:FA1.B
+B[2] => FA:FA2.B
+B[3] => FA:FA3.B
+B[4] => FA:FA4.B
+B[5] => FA:FA5.B
+B[6] => FA:FA6.B
+B[7] => FA:FA7.B
+Cin => FA:FA0.Cin
+S[0] <= FA:FA0.S
+S[1] <= FA:FA1.S
+S[2] <= FA:FA2.S
+S[3] <= FA:FA3.S
+S[4] <= FA:FA4.S
+S[5] <= FA:FA5.S
+S[6] <= FA:FA6.S
+S[7] <= FA:FA7.S
+Cout <= FA:FA7.Cout
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA0
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA2
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA3
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA4
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA5
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA6
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4-FA_8bit|FA_8bit:inst|FA:FA7
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

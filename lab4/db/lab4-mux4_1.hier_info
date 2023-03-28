@@ -1,0 +1,24 @@
+|lab4-mux4_1
+Y <= MUX4_1:inst.Y
+D[3] => MUX4_1:inst.D[3]
+D[2] => MUX4_1:inst.D[2]
+D[1] => MUX4_1:inst.D[1]
+D[0] => MUX4_1:inst.D[0]
+SEL[0] => MUX4_1:inst.SEL[0]
+SEL[1] => MUX4_1:inst.SEL[1]
+
+
+|lab4-mux4_1|MUX4_1:inst
+D[3] => Y.DATAA
+D[2] => Y.DATAB
+D[1] => Y.DATAB
+D[0] => Y.DATAB
+SEL[0] => Equal0.IN0
+SEL[0] => Equal1.IN1
+SEL[0] => Equal2.IN1
+SEL[1] => Equal0.IN1
+SEL[1] => Equal1.IN0
+SEL[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

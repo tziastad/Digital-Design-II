@@ -1,0 +1,120 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+|altera|91sp2|quartus|libraries|corelibrary|corelibrary|
+libraries|corelibrary|corelibrary|
+|altera|corelibrary|
+|altera|corelibary|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+lab4-FA_8bit
+# storage
+db|lab4-FA_8bit.(0).cnf
+db|lab4-FA_8bit.(0).cnf
+# case_insensitive
+# source_file
+lab4-fa_8bit.bdf
+cf6e5fc17bf25a576ac5aba582d3b73
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FA_8bit
+# storage
+db|lab4-FA_8bit.(1).cnf
+db|lab4-FA_8bit.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fa_8bit.vhd
+2f718b1599f8ccea465c28b2e091dacd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FA_8bit:inst
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+FA
+# storage
+db|lab4-FA_8bit.(2).cnf
+db|lab4-FA_8bit.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fa_1bit.vhd
+a980a66d66156b7e09f299462a8f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FA_8bit:inst|FA:FA0
+FA_8bit:inst|FA:FA1
+FA_8bit:inst|FA:FA2
+FA_8bit:inst|FA:FA3
+FA_8bit:inst|FA:FA4
+FA_8bit:inst|FA:FA5
+FA_8bit:inst|FA:FA6
+FA_8bit:inst|FA:FA7
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab4-counter_8bit">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab4-counter_8bit|NewLCD:inst1|lpm_rom0:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vn81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

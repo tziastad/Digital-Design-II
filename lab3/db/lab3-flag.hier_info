@@ -1,0 +1,29 @@
+|Flag
+Q <= 7476:inst21.1Q
+R[1] => inst1.IN1
+R[2] => inst1.IN0
+R[3] => inst2.IN1
+R[4] => inst2.IN0
+SET => 7476:inst21.1PRN
+CLK => inst6.IN0
+SF => inst6.IN1
+CLR => 7476:inst21.1CLRN
+
+
+|Flag|7476:inst21
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7.IN0
+2J => 7.IN1
+2CLK => 7.CLK
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8.IN0
+1J => 8.IN1
+1CLK => 8.CLK
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+

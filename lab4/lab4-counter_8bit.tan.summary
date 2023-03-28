@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.515 ns
+From           : RST
+To             : Counter8Bit:inst|value[7]~_emulated
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.563 ns
+From           : newlcd:inst1|LCD_Display:inst|DATA_BUS_VALUE[1]
+To             : DBUS[1]
+From Clock     : CLK_50MHz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.820 ns
+From           : RST
+To             : newlcd:inst1|LCD_Display:inst|CHAR_COUNT[4]
+From Clock     : --
+To Clock       : CLK_50MHz
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK_50MHz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 130.94 MHz ( period = 7.637 ns )
+From           : newlcd:inst1|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_vn81:auto_generated|ram_block1a0~porta_address_reg4
+To             : newlcd:inst1|LCD_Display:inst|CHAR_COUNT[0]
+From Clock     : CLK_50MHz
+To Clock       : CLK_50MHz
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 351.49 MHz ( period = 2.845 ns )
+From           : Counter8Bit:inst|value[2]~_emulated
+To             : Counter8Bit:inst|value[7]~_emulated
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

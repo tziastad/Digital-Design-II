@@ -1,0 +1,453 @@
+|datapath2
+Q <= Flag:inst3.Q
+SET => Flag:inst3.SET
+CLR => Flag:inst3.CLR
+CLR => reg2:inst1.CLR
+CLR => reg2:inst.CLR
+CLK => Flag:inst3.CLK
+CLK => reg2:inst.CLK
+CLK => reg2:inst1.CLK
+SF => Flag:inst3.SF
+S1[1] <= Athristis:inst2.S[1]
+S1[2] <= Athristis:inst2.S[2]
+S1[3] <= Athristis:inst2.S[3]
+S1[4] <= Athristis:inst2.S[4]
+M => Athristis:inst2.M
+LA[0] <= reg2:inst1.L[0]
+LA[1] <= reg2:inst1.L[1]
+LA[2] <= reg2:inst1.L[2]
+LA[3] <= reg2:inst1.L[3]
+LB[0] <= reg2:inst.L[0]
+LB[1] <= reg2:inst.L[1]
+LB[2] <= reg2:inst.L[2]
+LB[3] <= reg2:inst.L[3]
+JK => reg2:inst.JK
+S/L_B => reg2:inst.ST/LDN
+A1_B => reg2:inst.A1
+A0_B => reg2:inst.A0
+I[0] => reg2:inst.I[0]
+I[0] => reg2:inst1.I[0]
+I[1] => reg2:inst.I[1]
+I[1] => reg2:inst1.I[1]
+I[2] => reg2:inst.I[2]
+I[2] => reg2:inst1.I[2]
+I[3] => reg2:inst.I[3]
+I[3] => reg2:inst1.I[3]
+S/L_A => reg2:inst1.ST/LDN
+A1_A => reg2:inst1.A1
+A0_A => reg2:inst1.A0
+S2[1] <= Athristis:inst4.S[1]
+S2[2] <= Athristis:inst4.S[2]
+S2[3] <= Athristis:inst4.S[3]
+S2[4] <= Athristis:inst4.S[4]
+
+
+|datapath2|Flag:inst3
+Q <= 7476:inst21.1Q
+R[1] => inst1.IN1
+R[2] => inst1.IN0
+R[3] => inst2.IN1
+R[4] => inst2.IN0
+SET => 7476:inst21.1PRN
+CLK => inst6.IN0
+SF => inst6.IN1
+CLR => 7476:inst21.1CLRN
+
+
+|datapath2|Flag:inst3|7476:inst21
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7.IN0
+2J => 7.IN1
+2CLK => 7.CLK
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8.IN0
+1J => 8.IN1
+1CLK => 8.CLK
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath2|Athristis:inst2
+s[1] <= 7483:inst16.S1
+s[2] <= 7483:inst16.S2
+s[3] <= 7483:inst16.S3
+s[4] <= 7483:inst16.S4
+B[1] => inst12.IN0
+B[2] => inst13.IN0
+B[3] => inst14.IN0
+B[4] => inst15.IN0
+M => inst15.IN1
+M => 7483:inst16.C0
+M => inst12.IN1
+M => inst13.IN1
+M => inst14.IN1
+A[1] => 7483:inst16.A1
+A[2] => 7483:inst16.A2
+A[3] => 7483:inst16.A3
+A[4] => 7483:inst16.A4
+
+
+|datapath2|Athristis:inst2|7483:inst16
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath2|reg2:inst1
+L[0] <= 74195:inst1.Q0
+L[1] <= 74195:inst1.Q1
+L[2] <= 74195:inst1.Q2
+L[3] <= 74195:inst1.Q3
+ST/LDN => 74195:inst1.ST/LDN
+JK => 74195:inst1.KN
+JK => 74195:inst1.J
+CLR => 74195:inst1.CLRN
+Y[0] <= Enable2:inst.Y[0]
+Y[1] <= Enable2:inst.Y[1]
+Y[2] <= Enable2:inst.Y[2]
+Y[3] <= Enable2:inst.Y[3]
+A0 => Enable2:inst.A0
+A1 => Enable2:inst.AI
+I[0] => Enable2:inst.I[0]
+I[1] => Enable2:inst.I[1]
+I[2] => Enable2:inst.I[2]
+I[3] => Enable2:inst.I[3]
+R1[0] => Enable2:inst.R1[0]
+R1[1] => Enable2:inst.R1[1]
+R1[2] => Enable2:inst.R1[2]
+R1[3] => Enable2:inst.R1[3]
+R2[0] => Enable2:inst.R2[0]
+R2[1] => Enable2:inst.R2[1]
+R2[2] => Enable2:inst.R2[2]
+R2[3] => Enable2:inst.R2[3]
+CLK => 74195:inst1.CLK
+
+
+|datapath2|reg2:inst1|74195:inst1
+Q0 <= 15.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 15.ACLR
+CLRN => 16.ACLR
+CLRN => 17.ACLR
+CLRN => 18.ACLR
+CLK => 15.CLK
+CLK => 16.CLK
+CLK => 17.CLK
+CLK => 18.CLK
+ST/LDN => 79.IN0
+ST/LDN => 48.IN0
+ST/LDN => 78.IN0
+ST/LDN => 34.IN1
+ST/LDN => 36.IN1
+ST/LDN => 38.IN1
+KN => 79.IN2
+D0 => 33.IN1
+J => 78.IN2
+Q1 <= 16.DB_MAX_OUTPUT_PORT_TYPE
+D1 => 35.IN1
+Q2 <= 17.DB_MAX_OUTPUT_PORT_TYPE
+D2 => 37.IN1
+Q3 <= 18.DB_MAX_OUTPUT_PORT_TYPE
+D3 => 39.IN1
+Q3N <= 83.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath2|reg2:inst1|Enable2:inst
+Y[0] <= choice2:inst.Y
+Y[1] <= choice2:inst1.Y
+Y[2] <= choice2:inst2.Y
+Y[3] <= choice2:inst3.Y
+L[0] => choice2:inst.L
+L[1] => choice2:inst1.L
+L[2] => choice2:inst2.L
+L[3] => choice2:inst3.L
+I[0] => choice2:inst.I
+I[1] => choice2:inst1.I
+I[2] => choice2:inst2.I
+I[3] => choice2:inst3.I
+R1[0] => choice2:inst.R1
+R1[1] => choice2:inst1.R1
+R1[2] => choice2:inst2.R1
+R1[3] => choice2:inst3.R1
+R2[0] => choice2:inst.R2
+R2[1] => choice2:inst1.R2
+R2[2] => choice2:inst2.R2
+R2[3] => choice2:inst3.R2
+A0 => choice2:inst.A0
+A0 => choice2:inst1.A0
+A0 => choice2:inst2.A0
+A0 => choice2:inst3.A0
+AI => choice2:inst.A1
+AI => choice2:inst1.A1
+AI => choice2:inst2.A1
+AI => choice2:inst3.A1
+
+
+|datapath2|reg2:inst1|Enable2:inst|choice2:inst
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|reg2:inst1|Enable2:inst|choice2:inst1
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|reg2:inst1|Enable2:inst|choice2:inst2
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|reg2:inst1|Enable2:inst|choice2:inst3
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|reg2:inst
+L[0] <= 74195:inst1.Q0
+L[1] <= 74195:inst1.Q1
+L[2] <= 74195:inst1.Q2
+L[3] <= 74195:inst1.Q3
+ST/LDN => 74195:inst1.ST/LDN
+JK => 74195:inst1.KN
+JK => 74195:inst1.J
+CLR => 74195:inst1.CLRN
+Y[0] <= Enable2:inst.Y[0]
+Y[1] <= Enable2:inst.Y[1]
+Y[2] <= Enable2:inst.Y[2]
+Y[3] <= Enable2:inst.Y[3]
+A0 => Enable2:inst.A0
+A1 => Enable2:inst.AI
+I[0] => Enable2:inst.I[0]
+I[1] => Enable2:inst.I[1]
+I[2] => Enable2:inst.I[2]
+I[3] => Enable2:inst.I[3]
+R1[0] => Enable2:inst.R1[0]
+R1[1] => Enable2:inst.R1[1]
+R1[2] => Enable2:inst.R1[2]
+R1[3] => Enable2:inst.R1[3]
+R2[0] => Enable2:inst.R2[0]
+R2[1] => Enable2:inst.R2[1]
+R2[2] => Enable2:inst.R2[2]
+R2[3] => Enable2:inst.R2[3]
+CLK => 74195:inst1.CLK
+
+
+|datapath2|reg2:inst|74195:inst1
+Q0 <= 15.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 15.ACLR
+CLRN => 16.ACLR
+CLRN => 17.ACLR
+CLRN => 18.ACLR
+CLK => 15.CLK
+CLK => 16.CLK
+CLK => 17.CLK
+CLK => 18.CLK
+ST/LDN => 79.IN0
+ST/LDN => 48.IN0
+ST/LDN => 78.IN0
+ST/LDN => 34.IN1
+ST/LDN => 36.IN1
+ST/LDN => 38.IN1
+KN => 79.IN2
+D0 => 33.IN1
+J => 78.IN2
+Q1 <= 16.DB_MAX_OUTPUT_PORT_TYPE
+D1 => 35.IN1
+Q2 <= 17.DB_MAX_OUTPUT_PORT_TYPE
+D2 => 37.IN1
+Q3 <= 18.DB_MAX_OUTPUT_PORT_TYPE
+D3 => 39.IN1
+Q3N <= 83.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath2|reg2:inst|Enable2:inst
+Y[0] <= choice2:inst.Y
+Y[1] <= choice2:inst1.Y
+Y[2] <= choice2:inst2.Y
+Y[3] <= choice2:inst3.Y
+L[0] => choice2:inst.L
+L[1] => choice2:inst1.L
+L[2] => choice2:inst2.L
+L[3] => choice2:inst3.L
+I[0] => choice2:inst.I
+I[1] => choice2:inst1.I
+I[2] => choice2:inst2.I
+I[3] => choice2:inst3.I
+R1[0] => choice2:inst.R1
+R1[1] => choice2:inst1.R1
+R1[2] => choice2:inst2.R1
+R1[3] => choice2:inst3.R1
+R2[0] => choice2:inst.R2
+R2[1] => choice2:inst1.R2
+R2[2] => choice2:inst2.R2
+R2[3] => choice2:inst3.R2
+A0 => choice2:inst.A0
+A0 => choice2:inst1.A0
+A0 => choice2:inst2.A0
+A0 => choice2:inst3.A0
+AI => choice2:inst.A1
+AI => choice2:inst1.A1
+AI => choice2:inst2.A1
+AI => choice2:inst3.A1
+
+
+|datapath2|reg2:inst|Enable2:inst|choice2:inst
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|reg2:inst|Enable2:inst|choice2:inst1
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|reg2:inst|Enable2:inst|choice2:inst2
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|reg2:inst|Enable2:inst|choice2:inst3
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+L => inst.IN0
+A0 => inst5.IN0
+A0 => inst2.IN1
+A0 => inst3.IN1
+A1 => inst6.IN0
+A1 => inst3.IN2
+A1 => inst1.IN2
+R1 => inst2.IN0
+R2 => inst3.IN0
+I => inst1.IN0
+
+
+|datapath2|Athristis:inst4
+s[1] <= 7483:inst16.S1
+s[2] <= 7483:inst16.S2
+s[3] <= 7483:inst16.S3
+s[4] <= 7483:inst16.S4
+B[1] => inst12.IN0
+B[2] => inst13.IN0
+B[3] => inst14.IN0
+B[4] => inst15.IN0
+M => inst15.IN1
+M => 7483:inst16.C0
+M => inst12.IN1
+M => inst13.IN1
+M => inst14.IN1
+A[1] => 7483:inst16.A1
+A[2] => 7483:inst16.A2
+A[3] => 7483:inst16.A3
+A[4] => 7483:inst16.A4
+
+
+|datapath2|Athristis:inst4|7483:inst16
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+

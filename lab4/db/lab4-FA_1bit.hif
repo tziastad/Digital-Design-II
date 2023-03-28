@@ -1,0 +1,80 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+|altera|91sp2|quartus|libraries|corelibrary|corelibrary|
+libraries|corelibrary|corelibrary|
+|altera|corelibrary|
+|altera|corelibary|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+lab4-FA_1bit
+# storage
+db|lab4-FA_1bit.(0).cnf
+db|lab4-FA_1bit.(0).cnf
+# case_insensitive
+# source_file
+lab4-fa_1bit.bdf
+334379cc4e9530944b5e9ab14b7bd41e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FA
+# storage
+db|lab4-FA_1bit.(1).cnf
+db|lab4-FA_1bit.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fa_1bit.vhd
+a980a66d66156b7e09f299462a8f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FA:inst
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

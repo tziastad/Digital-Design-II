@@ -1,0 +1,45 @@
+|Athristis
+s[1] <= 7483:inst16.S1
+s[2] <= 7483:inst16.S2
+s[3] <= 7483:inst16.S3
+s[4] <= 7483:inst16.S4
+B[1] => inst12.IN0
+B[2] => inst13.IN0
+B[3] => inst14.IN0
+B[4] => inst15.IN0
+M => inst15.IN1
+M => 7483:inst16.C0
+M => inst12.IN1
+M => inst13.IN1
+M => inst14.IN1
+A[1] => 7483:inst16.A1
+A[2] => 7483:inst16.A2
+A[3] => 7483:inst16.A3
+A[4] => 7483:inst16.A4
+
+
+|Athristis|7483:inst16
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
